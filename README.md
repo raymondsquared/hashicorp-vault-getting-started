@@ -40,6 +40,9 @@ make create-secrets                     # Create secrets in vault
 make enable-k8s-authn                   # Configure vault to interact with k8s
 
 make run-vault-ui                       # Run HashiCorp Vault UI
+
+make install-app                        # Install web application
+make run-app                            # Run web application
 ```
 
 ### Check Web Application
@@ -50,13 +53,21 @@ The Vault UI is enabled but NOT exposed as service for security reasons. The Vau
 http://localhost:8200
 ```
 
+### Check Web Application
+
+In the original terminal, perform a curl request at http://localhost:8080.
+
+```
+curl http://localhost:8080
+```
+
 ## 🤝 Contributing
 
 We welcome contributions to Kubernetes Deployment Strategy! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to submit pull requests, report issues, and suggest improvements.
 
 ## 📜 License
 
-OPA is open-source software licensed under the [MIT license](http://www.apache.org/licenses/mit).
+This repo is open-source software licensed under the [MIT license](http://www.apache.org/licenses/mit).
 
 ## 🙏 Acknowledgements
 

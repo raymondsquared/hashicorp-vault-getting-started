@@ -36,3 +36,11 @@ enable-k8s-authn:
 .PHONY: run-vault-ui
 run-vault-ui: 
 	kubectl port-forward vault-0 8200:8200
+
+.PHONY: install-app
+install-app:
+	kubectl apply --filename deployment-01-webapp.yaml
+
+.PHONY: run-app
+run-app:
+	./run-app.sh
